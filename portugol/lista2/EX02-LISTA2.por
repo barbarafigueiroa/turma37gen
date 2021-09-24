@@ -3,7 +3,7 @@ programa
 	
 	funcao inicio()
 	{
-		real horasTrabalhadas = 0.0
+		inteiro horasTrabalhadas = 0.0
 		real salario = 0.0
 		inteiro horaExcedente = 0
 		real remuneracaoHoraExtra = 0.0
@@ -35,7 +35,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 794; 
+ * @POSICAO-CURSOR = 42; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
