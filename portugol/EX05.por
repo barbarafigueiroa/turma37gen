@@ -20,7 +20,7 @@ programa
 		nota1 = nota1 * 2
 		nota2 = nota2 * 3
 		nota3 = nota3 * 5
-		mediaComPeso = nota1 + nota2 + nota3 / 3
+		mediaComPeso = (nota1 + nota2 + nota3) / 3
 		escreva("MÉDIA DO ALUNO COM SEUS RESPECTIVOS PESOS: ", (m.arredondar(mediaComPeso,2)))
 		
 		
@@ -31,7 +31,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 653; 
+ * @POSICAO-CURSOR = 562; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

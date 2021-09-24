@@ -18,8 +18,8 @@ programa
 		escreva("INFORME A TAXA DE IMPOSTO: ")
 		leia(impostos)
 		escreva("\n")
-		porcentagemDistribuidor = custoFabrica * porcentagemDistribuidor / 100
-		impostos = custoFabrica * impostos / 100
+		porcentagemDistribuidor = (custoFabrica * porcentagemDistribuidor) / 100
+		impostos = (custoFabrica * impostos) / 100
 		custoCliente = porcentagemDistribuidor + impostos + custoFabrica
 		escreva("O CARRO PARA O CLIENTE, SAIRÁ NO VALOR DE: R$", (m.arredondar(custoCliente,2))," REAIS")
 		
@@ -30,7 +30,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 786; 
+ * @POSICAO-CURSOR = 618; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
