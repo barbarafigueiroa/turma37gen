@@ -1,6 +1,6 @@
 programa
 {
-	inclua biblioteca Matematica
+	inclua biblioteca Matematica --> m
 	funcao inicio()
 	{
 
@@ -18,8 +18,8 @@ programa
 		leia(y1)
 		escreva("DIGITE O VALOR DO QUARTO PONTO: ")
 		leia(y2)
-		d = Matematica.arredondar ((Matematica.raiz ((Matematica.potencia ((x2-x1), 2) + Matematica.potencia ((y2-y1), 2)), 2)), 2)
-		escreva("O RESULTADO DA OPERAÇÃO FOI: ", d)
+		d =  (m.raiz ((m.potencia ((x2-x1), 2) + m.potencia ((y2-y1), 2)), 2))
+		escreva("O RESULTADO DA OPERAÇÃO FOI: ", m.arredondar(d,2))
 		
 		
 		
@@ -30,7 +30,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 551; 
+ * @POSICAO-CURSOR = 520; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
