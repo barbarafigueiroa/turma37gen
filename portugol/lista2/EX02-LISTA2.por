@@ -3,7 +3,7 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro horasTrabalhadas = 0.0
+		inteiro horasTrabalhadas = 0
 		real salario = 0.0
 		inteiro horaExcedente = 0
 		real remuneracaoHoraExtra = 0.0
@@ -12,19 +12,21 @@ programa
 		escreva("INFORME A QUANTIDADE DE HORAS TRABALHADAS: ")
 		leia(horasTrabalhadas)
 		
-		salario = horasTrabalhadas * 10
-		horaExcedente = horasTrabalhadas - 50 
-		remuneracaoHoraExtra = horasTrabalhadas * 20
-
 		se (horasTrabalhadas > 50 ){
-			salario = salario + remuneracaoHoraExtra
-			escreva("\n-------------------------------------------------------------------------------------------------------------------------------")
-			escreva("\nO seu salário é R$ ",salario, " mas você trabalhou, ", horaExcedente, " horas a mais, então o seu pagamento total será R$ ", salario + remuneracaoHoraExtra, " reais")
+			salario = 50 * 10
+			horaExcedente = horasTrabalhadas - 50 
+			remuneracaoHoraExtra = horaExcedente * 20
+			
+			escreva("\n----------------------------------------------------------------------------------------------------------------")
+			escreva("\nO seu salário é R$ ",salario, " mas você trabalhou ", horaExcedente, " horas a mais, então o seu pagamento total será R$ ", salario + remuneracaoHoraExtra, " reais")
+			escreva("\n----------------------------------------------------------------------------------------------------------------")
 		}
 
-		senao se (horasTrabalhadas <= 50 ){
+		senao se (horasTrabalhadas < 50 ){
+			salario = horasTrabalhadas * 10
 			escreva("------------------------------------------------------------------")
-			escreva( "\n Você não fez horas- extras, seu pagamento será de R$ ", salario)
+			escreva( "\nVocê não fez horas - extras, seu pagamento será de R$ ", salario)
+			escreva("\n------------------------------------------------------------------")
 		}
 		
 		
@@ -35,7 +37,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 42; 
+ * @POSICAO-CURSOR = 1153; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
