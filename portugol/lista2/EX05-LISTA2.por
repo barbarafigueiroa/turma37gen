@@ -21,7 +21,7 @@ programa
 			escreva("\nTODAS AS INDÚSTRIAS DO GRUPO 1 E 2 DEVEM SUSPENDER SUAS ATIVIDADES IMEDIATAMENTE!")
 			
 			
-		}senao se(indicePoluicao >= 0.){
+		}senao se(indicePoluicao >= 0.5){
 			escreva("\nTODAS AS INDÚSTRIAS DE TODOS OS GRUPOS SERÃO NOTIFICADAS E DEVEM SUSPENDER SUAS ATIVIDADES IMEDIATAMENTE!")
 		}
 		
@@ -32,7 +32,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 840; 
+ * @POSICAO-CURSOR = 958; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
