@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me diz e Te direi</title>
+    <style>
+        body{
+            text-align: center;
+            font: normal 20pt arial;
+            background-image: url(https://i.pinimg.com/564x/41/a9/97/41a997f335f00e9e9458a1327acc8790.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-position-y: 400px
+            ;
+            
+        }
+        input{
+            font: normal 18pt arial;
+            width: 100px;
+        }
+        div#resposta{
+            margin-top: 20px;
+        }
+        h1{
+            text-align: center;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Sistema de verificação de caráter</h1>
+    Tu votasse em quem pra PRESIDENTE? <input type="text" name="presidente" id="presidente">
+    <input type="button" value="verificar caráter" onclick="carater()" >
+    <div id="resposta">
+       <strong>medo...</strong>
+    <div id = 'imagem'>
+
+    </div>
+
+    </div>
+
+    <script>
+        function carater(){
+            var foto = window.document.querySelector('div#imagem')
+            var presi = window.document.querySelector('input#presidente')
+            var resp = window.document.querySelector('div#resposta')
+            var voto = (presi.value)
+            resp.innerHTML=`<p> Tu votasse em <strong>${voto}</strong> pra Presidente!!!</p>`
+            if(voto == 'bolsonaro' || voto == 'Bolsonaro'){
+                resp.innerHTML += `<p> Tu é <strong>MAU CARÁTER</strong> sim, pois quem concorda com as ideias e ideais de um <strong> G E N O C I D A</strong>, é <strong> MAU CARÁTER!</strong></p>`
+                foto.innerHTML += `<img src = './bolsonaro.png' alt =""/>`//quero que quando a pessoa digitar bolsonaro, apareça uma imagem
+            }
+            resp.innerHTML += `<p> Somos cientes da precariedade de nossos grupos políticos, <strong>MAS</strong>, pense direito sobre o seu voto, ele é muito <strong>IMPORTANTE!!!</strong></p>`
+
+        }
+    </script>
+
+</body>
+</html>
