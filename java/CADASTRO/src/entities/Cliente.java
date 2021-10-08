@@ -1,37 +1,86 @@
 package entities;
 
 public class Cliente {
-
-	public String nome;
-	public String endereco;
-	public int diaNiversario;
-	public int mesNiversario;
-	public int anoNascimento;
-	public String cpf;
-	public int rg;
-	public String email;
-	public char pronome;
-
-	public int calcularIdade() {
-
-		return 2021 - anoNascimento;
+	
+	//atributos
+	private String nome;
+	private String endereco;
+	private String cpf;
+	private int anoNascimento;
+	
+	
+	
+	//construtor
+	public Cliente(String nome, String endereco, String cpf, int anoNascimento) {
+		super();
+		this.nome = nome;
+		this.endereco = endereco;
+		this.cpf = cpf;
+		this.anoNascimento = anoNascimento;
 	}
 
-	public String mensagemFelizAniversario(int dataAtual) {
+
+	
+	//encapsulamento
+	public String getNome() {
+		return nome;
+	}
+
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+
+	public String getEndereco() {
+		return endereco;
+	}
+
+
+	public void setEndereco(String endereco) {
+		this.endereco = endereco;
+	}
+
+
+	public String getCpf() {
+		return cpf;
+	}
+
+
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
+	
+	
+	
+	public int getAnoNascimento() {
+		return anoNascimento;
+	}
+
+
+
+	public void setAnoNascimento(int anoNascimento) {
+		this.anoNascimento = anoNascimento;
+	}
+
+
+
+	//metodos
+	public void seApresentar(int idade) {
+		idade = 2021 - anoNascimento;
+		System.out.println("Olá! Eu me chamo " + this.nome + ". Eu tenho" + idade + " anos.");
 		
-		if (dataAtual == diaNiversario) {
-
-		}
-		return ("Feliz aniversário" + nome
-				+ "! Hoje você terá 20% de desconto em qualquer produto da loja. A P R O V E I T E !!!");
 	}
-
-	public String descontoMesNiversario() {
-		int mesAtual = 0;
-		if (mesAtual == mesNiversario) {
-
-		}
-		return ("Chegou o mês do seu aniversário! Estamos contando os dias...");
+	
+	public void seDespedir() {
+		System.out.println("Até logo!");
 	}
+	
 
+	
+	
+
+	
 }
+
+

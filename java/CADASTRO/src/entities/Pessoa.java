@@ -2,24 +2,69 @@ package entities;
 
 public class Pessoa {
 	
-	public String nome;
-	public int anoNascimento;
-	public boolean viva;
-	public String email;
-	public char pronome; 
+	private String nome;
+	private int anoNascimento;
+	private boolean viva;
+	private String email;
+	private char pronome;
 	
 	
-    public int calcularIdade() {
-        return 2021 - anoNascimento;
-    }
+	//construtor
+	public Pessoa(String nome, int anoNascimento, boolean viva, String email, char pronome) {
+		super();
+		this.nome = nome;
+		this.anoNascimento = anoNascimento;
+		this.viva = viva;
+		this.email = email;
+		this.pronome = pronome;
+	}
 
-    public int calcularIdade(int ano) {
-        return ano - anoNascimento;
-    }
+	
+	//encapsulamento
+	public String getNome() {
+		return nome;
+	}
 
-    //@Override
-    public String toString() {
-        return "Pessoa [nome=" + nome + ", anoNascimento=" + anoNascimento + "]";
-    }
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public int getAnoNascimento() {
+		return anoNascimento;
+	}
+
+	public void setAnoNascimento(int anoNascimento) {
+		this.anoNascimento = anoNascimento;
+	}
+
+	public boolean isViva() {
+		return viva;
+	}
+
+	public void setViva(boolean viva) {
+		this.viva = viva;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public char getPronome() {
+		return pronome;
+	}
+
+	public void setPronome(char pronome) {
+		this.pronome = pronome;
+	} 
+	
+	//metodos
+	
+	
+	
+    
 	
 }
