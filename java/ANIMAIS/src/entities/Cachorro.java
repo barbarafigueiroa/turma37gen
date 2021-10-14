@@ -3,8 +3,8 @@ package entities;
 public class Cachorro extends Animal {
 	private boolean capacidadeCorrer;
 
-	public Cachorro(String nome, int idade, boolean capacidadeCorrer) {
-		super(nome, idade);
+	public Cachorro(String nome, int idade, boolean emiteSom, boolean capacidadeCorrer) {
+		super(nome, idade, emiteSom);
 		this.capacidadeCorrer = capacidadeCorrer;
 	}
 
@@ -15,6 +15,8 @@ public class Cachorro extends Animal {
 	public void setCapacidadeCorrer(boolean capacidadeCorrer) {
 		this.capacidadeCorrer = capacidadeCorrer;
 	}
+
+	
 
 	@Override
 	public void correr() {

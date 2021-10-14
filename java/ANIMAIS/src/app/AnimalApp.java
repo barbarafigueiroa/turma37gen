@@ -10,9 +10,9 @@ public class AnimalApp {
 	public static void main(String[] args) {
 		
 	
-		Animal cachorro1 = new Cachorro("domdom", 2, true);
-		Animal cavalo1 = new Cavalo("Hulkão", 8, true);
-		Animal preguica1 = new Preguica("tikinha", 3, true);
+		Animal cachorro1 = new Cachorro("domdom", 2, true,true);
+		Animal cavalo1 = new Cavalo("Hulkão", 8, true,true);
+		Animal preguica1 = new Preguica("tikinha", 3, true,true);
 		
 		
 		System.out.println(cachorro1.getNome());
