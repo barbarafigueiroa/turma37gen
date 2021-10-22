@@ -11,7 +11,7 @@ public class aplication {
 		double auxSaldo = 0;
 		ContaPoupanca cp1 = new ContaPoupanca(1002182, "08964250451", 16);
 
-		cp1.setSaldo(1000.0);
+		//cp1.setSaldo(1000.0);
 		cp1.ativarConta();
 		System.out.println("         $ $ $    BANGOO - G6   $ $ $");
 		System.out.println("     >> AQUI VOCÊ ENTRA LISO E SAI RICO <<\n");
@@ -34,7 +34,7 @@ public class aplication {
 			System.out.println("DIGITE O DIA DO SEU ANIVERSÁRIO: ");
 			int diaAniver = leia.nextInt();
 			cp1.setDiaAniversario(diaAniver);
-			cp1.correcao(diaAtual, diaAniver, auxSaldo);
+			//cp1.correcao(diaAtual, diaAniver, auxSaldo);
 			
 		}
 			break;

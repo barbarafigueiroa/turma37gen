@@ -3,15 +3,15 @@ package entities;
 public abstract class Conta {
 	private int numero;
 	private String cpf;
-	protected double saldo;
+	private double saldo;
 	private boolean ativo;
-	//private int diaAtual;
-	
+	// private int diaAtual;
+
 	public Conta(int numero, String cpf) {
 		super();
 		this.numero = numero;
 		this.cpf = cpf;
-		//this.diaAtual = diaAtual;
+		// this.diaAtual = diaAtual;
 	}
 
 	public int getNumero() {
@@ -34,9 +34,9 @@ public abstract class Conta {
 		return saldo;
 	}
 
-	public void setSaldo(double saldo) {
-		this.saldo = saldo;
-	}
+	/*
+	 * public void setSaldo(double saldo) { this.saldo = saldo; }
+	 */
 
 	public boolean isAtivo() {
 		return ativo;
@@ -46,24 +46,34 @@ public abstract class Conta {
 		this.ativo = ativo;
 	}
 
-	
 	public void ativarConta() {
 		this.ativo = true;
 		System.out.println("Conta ativa!");
-		
+
 	}
-	
-	public double debitoEmConta(int valorDebitado) {
-		double novoSaldo = (valorDebitado - this.saldo);
-		return novoSaldo;
+
+	public void debitoEmConta(int valor) {
+		if (valor <= 0) {
+			System.out.println("Impossível realizar");
+
+		} else if (valor > saldo) {
+			System.out.println("Saldo indisponível");
+		} else if (saldo >= valor) {
+			this.saldo = valor - this.saldo;
+			System.out.println("Operação de débito realizada com sucesso");
+		}
+
 	}
-	
-	public double creditoEmConta(int valorCreditado) {
-		double novoSaldo = (valorCreditado + this.saldo);
-		return novoSaldo;
+
+	public void creditoEmConta(double valor) {
+		if (valor <= 0) {
+			System.out.println("Impossível realizar");
+
+		} else {
+			this.saldo = this.saldo + valor;
+			System.out.println("Operação de crédito realizada com sucesso");
+		}
+
 	}
-	
-	
-	
-	
+
 }
