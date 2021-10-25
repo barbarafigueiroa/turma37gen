@@ -22,6 +22,8 @@ INSERT INTO tb_produtos(nome, valor, marca, codigo) VALUES
 ("Carregador", 59.75, "Sony", "P-006"),
 ("Cabo HDMI", 25.40, "marca anonima", "P-007")
 ;
+
+-- INSERINDO MAIS UM PRODUTO
 INSERT INTO tb_produtos(nome, valor, marca, codigo) VALUES 
 ("Cadeira", 1500.00, "marca Gamer", "P-008");
 
