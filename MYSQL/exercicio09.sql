@@ -59,5 +59,5 @@ ON tb_curso.fk_categoria = tb_categoria.id_categoria
 SELECT * FROM tb_categoria
 INNER JOIN tb_curso
 ON tb_curso.fk_categoria = tb_categoria.id_categoria
-WHERE tb_categoria.turno ='n'
+WHERE tb_categoria.turno ='noite'
 ;
